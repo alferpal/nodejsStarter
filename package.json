@@ -4,6 +4,7 @@
   "description": "{{changethis}}",
   "main": "{{changethis}}",
   "scripts": {
+    "commit": "git-cz",
     "prerelease": "npm t",
     "pretest": "standard lib test *.js",
     "release": "standard-version -s",
@@ -18,13 +19,7 @@
   },
   "homepage": "https://github.com/alferpal/{{changethis}}",
   "bugs": "https://github.com/alferpal/{{changethis}}/issues",
-  "keywords": [
-    "git",
-    "repos",
-    "repositories",
-    "branch",
-    "branches"
-  ],
+  "keywords": [],
   "author": {
     "email": "alferpal@gmail.com",
     "name": "Alex Ferrando",
@@ -34,6 +29,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "cz-conventional-changelog": "~2.1.0",
     "nyc": "~11.1.0",
     "require-inject": "~1.4.2",
     "standard": "~10.0.3",
@@ -50,6 +46,9 @@
         "node_modules/**",
         "test/**"
       ]
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
