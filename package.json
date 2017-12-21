@@ -1,0 +1,55 @@
+{
+  "name": "@alferpal/{{changethis}}",
+  "version": "2.0.0",
+  "description": "{{changethis}}",
+  "main": "{{changethis}}",
+  "scripts": {
+    "prerelease": "npm t",
+    "pretest": "standard lib test *.js",
+    "release": "standard-version -s",
+    "start": "node {{changethis}}",
+    "test": "nyc --all -- tap -J test/*.js",
+    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
+    "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alferpal/{{changethis}}.git"
+  },
+  "homepage": "https://github.com/alferpal/{{changethis}}",
+  "bugs": "https://github.com/alferpal/{{changethis}}/issues",
+  "keywords": [
+    "git",
+    "repos",
+    "repositories",
+    "branch",
+    "branches"
+  ],
+  "author": {
+    "email": "alferpal@gmail.com",
+    "name": "Alex Ferrando",
+    "twitter": "alferpal",
+    "url": "https://github.com/alferpal"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "nyc": "~11.1.0",
+    "require-inject": "~1.4.2",
+    "standard": "~10.0.3",
+    "standard-version": "~4.2.0",
+    "tacks": "~1.2.6",
+    "tap": "~10.7.1",
+    "weallbehave": "~1.2.0",
+    "weallcontribute": "~1.0.8"
+  },
+  "private": true,
+  "config": {
+    "nyc": {
+      "exclude": [
+        "node_modules/**",
+        "test/**"
+      ]
+    }
+  }
+}
