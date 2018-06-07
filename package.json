@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "git-cz",
     "prerelease": "npm t",
-    "pretest": "standard lib test *.js",
+    "pretest": "standard",
     "release": "standard-version -s",
     "start": "node {{changethis}}",
     "test": "nyc --all -- tap -J test/*.js",
